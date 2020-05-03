@@ -1,0 +1,57 @@
+html[data-theme="light"] {
+  --primaryBackground: #eeeded; // content backgrond start for gradient
+  --primaryGradientBackground: #eeeded; // content backgrond end for gradient
+  --secondaryBackground: #eeeded; // side nav menu background
+  --sideNavMenuBackground: #263238; // side nav menu background
+  --headerBackground: #324148; // header background
+  --cardBackground: #fff; // card background
+  --sideNavMenuItem: #8c909a; // side nav menu item text color
+  --contentTextColor: #8c909a; // content text color
+  // --headingTextColor: #9c9fa6;
+  --headingTextColor: #000;
+  // --textColor: #b1b1b5;
+  --textColor: #000;
+  --headerTextColor: #fff;
+  // --barReChartSingleXAxis: #76777e;
+  --barReChartSingleXAxis: #000;
+  // --barReChartSingleYAxis: #76777e;
+  --barReChartSingleYAxis: #000;
+  // --pieRechartCustomeTest: #76777e;
+  --pieRechartCustomeTest: #f0f0f0;
+  --pieRechartTooltip: #76777e;
+  --tableSelectedRow: #1e1e2f;
+  --tableHeaderBroder: #b1b1b5;
+  --tableRowBorder: #373b54;
+  --scrollbarColor: #26293b;
+  //   --customSucess: #07cc34c7;
+  --customSucess: #00ff3a;
+  // --customSucess: #28a745c7;
+  --customWarning: #fd7e14;
+  --customDanger: #ec0920;
+  // --customDanger: #dc3546c7;
+  --customInfo: #17a2b8c7;
+  --customDark: #343a40c7;
+  --primaryButtonHover: #ee781c;
+  --creamWhite: #fff;
+  --lightRed: rgb(243, 99, 86);
+  --sideNavBarMainItem: linear-gradient(40deg, #ffd86f, #fc6262);
+  --sideNavBarSubMainItem: #36a69a;
+  --primaryButton: #008cba !important;
+  --primaryButtonHover: linear-gradient(40deg, #ffd86f, #fc6262) !important;
+  --primaryAddIcon: linear-gradient(40deg, #ffd86f, #fc6262) !important;
+  --primaryEditIcon: linear-gradient(to right top, #f30236, #aa02ec, #ffd86f);
+  --paymentMessageHeader: #00dcff;
+  --bootTableBackground: rgb(52, 58, 64);
+  --holidayTable: #000;
+  --reactTableBorder: #676767;
+  --reactTableBodyTextColor: #000;
+  --selectedReactTableBodyTextColor: #fff;
+  --selectedCardBackground: #263238;
+  --activityProgressTextColor: #f0f0f0;
+  --formBackgroundColor: #fff;
+  --errorScreenMenuBackground: #fff;
+  --reactTableBackground: #eeeded;
+  --evenReactTableBackground: #fff;
+  --inboundCardBackground: #3a5461; // header background
+  --closeAddIconColor: #3a5461;
+}

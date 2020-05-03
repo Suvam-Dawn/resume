@@ -1,26 +1,60 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, {Component} from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import General from './components/General';
+import {HashRouter, Switch, Route, Redirect} from 'react-router-dom';
+import LocalStorage from './config/LocalStorage';
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      theme: 'dark',
+    };
+    this.toggletheme = this.toggletheme.bind(this);
+  }
+  UNSAFE_componentWillMount = () => {
+    //Theme change control local storage
+    var theme = localStorage.getItem('theme');
+    if (theme === undefined || theme === null) {
+      localStorage.setItem('theme', LocalStorage.theme);
+    } else {
+      this.setState({theme: theme}, () => {
+        this.toggletheme();
+      });
+    }
+  };
+  toggletheme = () => {
+    const theme = this.state.theme === 'dark' ? 'dark' : 'light';
+    document.documentElement.classList.add('color-theme-in-transition');
+    this.setState({theme});
+    document.documentElement.setAttribute('data-theme', theme);
+    window.setTimeout(() => {
+      document.documentElement.classList.remove('color-theme-in-transition');
+    }, 1000);
+  };
+  render() {
+    return (
+      <div style={rootStyle} className={'rootDiv'}>
+        <HashRouter>
+          <Switch>
+            <Route exact path="/" render={() => <Redirect to="/about" />} />
+            <Route
+              exact
+              path={[
+                '/about',
+                '/experience',
+                '/skills',
+                '/education',
+                '/contact',
+                '/download',
+              ]}
+              component={General}
+            />
+          </Switch>
+        </HashRouter>
+      </div>
+    );
+  }
 }
-
-export default App;
+const rootStyle = {
+  overflowX: 'hidden',
+};

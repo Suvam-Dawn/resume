@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+import './styles/App.scss';
 import * as serviceWorker from './serviceWorker';
-
+import {I18nextProvider} from 'react-i18next';
+import i18next from 'i18next';
+import LanguageConfig from './config/LanguageConfig';
+i18next.init({
+  interpolation: {escapeValue: false}, // React already does escaping
+  lng: 'en', // language to use
+  resources: LanguageConfig.I18ConfigResources(),
+  fallbackLng: 'en',
+});
 ReactDOM.render(
-  <React.StrictMode>
+  <I18nextProvider i18n={i18next}>
     <App />
-  </React.StrictMode>,
+  </I18nextProvider>,
   document.getElementById('root')
 );
 

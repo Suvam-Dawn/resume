@@ -1,0 +1,126 @@
+//start of body styles
+body {
+  background: var(--primaryBackground);
+
+  margin: 0;
+  font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+//end of body styles
+.textLimit {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+code {
+  font-family: 'source-code-pro', 'Menlo', 'Monaco', 'Consolas', 'Courier New',
+    monospace;
+}
+
+@media screen and (max-width: 991px) {
+  .left-menu {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    flex-basis: unset !important;
+    max-width: 50px;
+    min-width: 50px;
+    width: 50px;
+  }
+  .content_div {
+    padding-top: 0px !important;
+  }
+  .left-menu .menuBtn {
+    height: 50px !important;
+  }
+  .content_div_left {
+    max-width: 50px;
+    min-width: 50px;
+    width: 50px;
+  }
+  .container {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+.download {
+  height: 50px;
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3;
+  margin-bottom: 5px;
+  align-self: center;
+}
+.download svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  padding: 4px;
+  color: var(--menuButton);
+}
+.content_div {
+  height: 100%;
+  padding-top: 3%;
+}
+
+.content_div__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+.left-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: var(--secoundryBackground);
+  margin: 40px 0;
+  -ms-flex-preferred-size: 70px;
+  flex-basis: 70px;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.left-menu .menuBtn {
+  width: 100%;
+  height: 70px;
+  background: var(--menuButton);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.menuList a {
+  padding-bottom: 2.5rem;
+  color: var(--customeGray);
+}
