@@ -3,6 +3,7 @@ import {Row, Col} from 'react-bootstrap';
 import Content from './Content';
 import {Helmet} from 'react-helmet';
 import SideMenu from './SideMenu';
+import SummeryInfo from './SummeryInfo';
 export default class General extends Component {
   constructor(props) {
     super(props);
@@ -66,21 +67,19 @@ export default class General extends Component {
         <div className={'container height-100'}>
           <Row className={'h-100'}>
             <Col
-              xl={6}
-              lg={6}
-              md={6}
-              sm={6}
-              xs={6}
+              xl={4}
+              lg={4}
+              md={4}
+              sm={4}
+              xs={4}
               className={'p-0 content_div_left'}
             >
               <div className={'content_div__head'}>
                 <SideMenu />
-                <div className={'userImage'}>
-                  <div className={'background'}></div>
-                </div>
+                <SummeryInfo />
               </div>
             </Col>
-            <Col xl={6} lg={6} md={6} sm={6} xs={6}>
+            <Col xl={8} lg={8} md={8} sm={8} xs={8}>
               <Content />
             </Col>
           </Row>

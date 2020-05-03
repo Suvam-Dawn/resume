@@ -4,7 +4,7 @@ import {MdWork, MdSettings, MdContacts} from 'react-icons/md';
 import {FaUserAlt, FaUserGraduate} from 'react-icons/fa';
 import {AiOutlineCloudDownload} from 'react-icons/ai';
 import {Link} from 'react-router-dom';
-export default class General extends Component {
+export default class SideMenu extends Component {
   render() {
     return (
       <div className="left-menu">

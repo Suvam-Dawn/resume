@@ -46,6 +46,9 @@ code {
     min-width: 100%;
     max-width: 100%;
   }
+  .userImage {
+    display: none !important;
+  }
 }
 .download {
   height: 50px;
@@ -136,5 +139,53 @@ code {
   box-shadow: 0 32px 84px 0 rgba(0, 0, 0, 0.5);
 }
 .userImage .background {
-  background-image: url(https://w5.themedemo.co/niko/black/wp-content/uploads/sites/4/2019/03/niko_img.jpg);
+  background-image: url('../../assets/suvam_dawn.webp');
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  opacity: 0.8;
+}
+.userImage .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10rem;
+}
+.userImage .info ._name {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.5;
+  color: var(--textColor);
+  text-align: center;
+  text-shadow: -1px 1px var(--menuButton);
+}
+.userImage .info ._position {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.17;
+  color: var(--menuButton);
+  text-align: center;
+  text-shadow: -1px 1px black;
+}
+.userImage .info ._socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+.userImage .info ._socialMedia a {
+  margin: 0.8rem;
+  color: var(--textColor);
+}
+.userImage .info ._socialMedia a:hover {
+  color: var(--menuButton);
 }
