@@ -124,3 +124,17 @@ code {
   padding-bottom: 2.5rem;
   color: var(--customeGray);
 }
+.menuList a:hover {
+  color: var(--menuButton);
+}
+
+.userImage {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  -webkit-box-shadow: 0 32px 84px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 32px 84px 0 rgba(0, 0, 0, 0.5);
+}
+.userImage .background {
+  background-image: url(https://w5.themedemo.co/niko/black/wp-content/uploads/sites/4/2019/03/niko_img.jpg);
+}

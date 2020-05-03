@@ -73,7 +73,12 @@ export default class General extends Component {
               xs={6}
               className={'p-0 content_div_left'}
             >
-              <SideMenu />
+              <div className={'content_div__head'}>
+                <SideMenu />
+                <div className={'userImage'}>
+                  <div className={'background'}></div>
+                </div>
+              </div>
             </Col>
             <Col xl={6} lg={6} md={6} sm={6} xs={6}>
               <Content />
