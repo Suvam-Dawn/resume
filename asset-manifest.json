@@ -1,27 +1,27 @@
 {
   "files": {
     "main.css": "/resumestatic/css/main.7d11f3b3.chunk.css",
-    "main.js": "/resumestatic/js/main.fc7c9394.chunk.js",
-    "main.js.map": "/resumestatic/js/main.fc7c9394.chunk.js.map",
-    "runtime-main.js": "/resumestatic/js/runtime-main.6943ad41.js",
-    "runtime-main.js.map": "/resumestatic/js/runtime-main.6943ad41.js.map",
+    "main.js": "/resumestatic/js/main.dbac51d9.chunk.js",
+    "main.js.map": "/resumestatic/js/main.dbac51d9.chunk.js.map",
+    "runtime-main.js": "/resumestatic/js/runtime-main.3ebc219f.js",
+    "runtime-main.js.map": "/resumestatic/js/runtime-main.3ebc219f.js.map",
     "static/css/2.539e65a7.chunk.css": "/resumestatic/css/2.539e65a7.chunk.css",
-    "static/js/2.97cdc38a.chunk.js": "/resumestatic/js/2.97cdc38a.chunk.js",
-    "static/js/2.97cdc38a.chunk.js.map": "/resumestatic/js/2.97cdc38a.chunk.js.map",
+    "static/js/2.5ecb34d4.chunk.js": "/resumestatic/js/2.5ecb34d4.chunk.js",
+    "static/js/2.5ecb34d4.chunk.js.map": "/resumestatic/js/2.5ecb34d4.chunk.js.map",
     "index.html": "/resume/index.html",
-    "precache-manifest.11471439f01d1a758b9622d1c80488f3.js": "/resume/precache-manifest.11471439f01d1a758b9622d1c80488f3.js",
+    "precache-manifest.4f4385b5652ffa72d2e74954ea9e014b.js": "/resume/precache-manifest.4f4385b5652ffa72d2e74954ea9e014b.js",
     "service-worker.js": "/resume/service-worker.js",
     "static/css/2.539e65a7.chunk.css.map": "/resumestatic/css/2.539e65a7.chunk.css.map",
     "static/css/main.7d11f3b3.chunk.css.map": "/resumestatic/css/main.7d11f3b3.chunk.css.map",
-    "static/js/2.97cdc38a.chunk.js.LICENSE.txt": "/resumestatic/js/2.97cdc38a.chunk.js.LICENSE.txt",
+    "static/js/2.5ecb34d4.chunk.js.LICENSE.txt": "/resumestatic/js/2.5ecb34d4.chunk.js.LICENSE.txt",
     "static/media/Suvam_Dawn_Resume(7407620534_8436758250_suvamdawn94@gmail.com).pdf": "/resumestatic/media/Suvam_Dawn_Resume(7407620534_8436758250_suvamdawn94@gmail.com).fb5368b5.pdf",
     "static/media/UNMATCHED_DEDICATION_AWARD.png": "/resumestatic/media/UNMATCHED_DEDICATION_AWARD.24c6d537.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.6943ad41.js",
+    "static/js/runtime-main.3ebc219f.js",
     "static/css/2.539e65a7.chunk.css",
-    "static/js/2.97cdc38a.chunk.js",
+    "static/js/2.5ecb34d4.chunk.js",
     "static/css/main.7d11f3b3.chunk.css",
-    "static/js/main.fc7c9394.chunk.js"
+    "static/js/main.dbac51d9.chunk.js"
   ]
 }
