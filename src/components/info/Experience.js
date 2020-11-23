@@ -5,7 +5,7 @@ export default class Experience extends Component {
 		this.state = {
 			experience: [
 				{
-					year: '2018-Present',
+					year: '2018 - Present',
 					company: 'GeekSynergy Technologies Pvt. Ltd.',
 					companyLocation: 'Bangalore, India',
 					responsibilities: [
