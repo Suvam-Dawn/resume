@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-
 export default class About extends Component {
 	render() {
 		return (
-			<div className="">
+			<div className="content">
 				<h1 className={'about_title'}>About me</h1>
 				<div className={'about_description'}>
 					I have been working as a full-stack developer since 2018, the period during which I have worked in

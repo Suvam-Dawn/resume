@@ -67,6 +67,10 @@ code {
 		color: var(--textColor);
 		text-align: center;
 	}
+	.experience_title {
+		color: var(--textColor);
+		text-align: center;
+	}
 	.about_description {
 		color: var(--customeLightGray);
 		text-align: justify;
@@ -226,6 +230,9 @@ code {
 	.about_title {
 		color: var(--textColor);
 	}
+	.experience_title {
+		color: var(--textColor);
+	}
 	.about_description {
 		color: var(--customeLightGray);
 		text-align: justify;
@@ -235,22 +242,39 @@ code {
 		overflow-x: auto;
 		padding-right: 5px;
 	}
+	.experience_area {
+		max-height: 430px;
+		overflow-x: auto;
+		padding-right: 5px;
+	}
 }
 
+.experience_year {
+	color: var(--menuButton);
+}
+.experience_company {
+	color: var(--textColor);
+}
+.experience_company_location {
+	color: var(--customeGray);
+}
 @media (hover: hover) {
-	.about_description::-webkit-scrollbar-track {
+	.content::-webkit-scrollbar-track,
+	.experience_area::-webkit-scrollbar-track {
 		box-shadow: inset 0 0 6px transparent;
 		-webkit-box-shadow: inset 0 0 6px transparent;
 		border-radius: 7px;
 		background-color: transparent;
 	}
 
-	.about_description::-webkit-scrollbar {
+	.content::-webkit-scrollbar,
+	.experience_area::-webkit-scrollbar {
 		width: 5px;
 		background-color: transparent;
 	}
 
-	.about_description::-webkit-scrollbar-thumb {
+	.content::-webkit-scrollbar-thumb,
+	.experience_area::-webkit-scrollbar-thumb {
 		border-radius: 100px;
 		box-shadow: inset 0 0 1px var(--customeLightGray);
 		-webkit-box-shadow: inset 0 0 1px var(--customeLightGray);
