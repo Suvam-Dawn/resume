@@ -1,46 +1,46 @@
 {
-  "name": "my-resume",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@material-ui/core": "^4.9.2",
-    "bootstrap": "^4.4.1",
-    "i18next": "^19.0.3",
-    "material-ui": "^0.20.2",
-    "node-sass": "^4.13.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-bootstrap": "^1.0.1",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^6.0.0-beta",
-    "react-i18next": "^11.3.0",
-    "react-icons": "^3.8.0",
-    "react-redux": "^7.1.3",
-    "react-router-dom": "^5.1.2",
-    "react-router-hash-link": "^1.2.2",
-    "react-scripts": "3.4.1",
-    "redux": "^4.0.5"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "rimraf ./build && react-scripts build && rimraf ./build/**/*.map",
-    "postbuild": "rimraf build/**/*.map",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+	"name": "my-resume",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@material-ui/core": "^4.9.2",
+		"bootstrap": "^4.4.1",
+		"i18next": "^19.0.3",
+		"material-ui": "^0.20.2",
+		"node-sass": "^4.13.1",
+		"prop-types": "^15.7.2",
+		"react": "^16.13.1",
+		"react-bootstrap": "^1.0.1",
+		"react-dom": "^16.13.1",
+		"react-helmet": "^6.0.0-beta",
+		"react-i18next": "^11.3.0",
+		"react-icons": "^3.8.0",
+		"react-redux": "^7.1.3",
+		"react-router-dom": "^5.1.2",
+		"react-router-hash-link": "^1.2.2",
+		"react-scripts": "3.4.1",
+		"redux": "^4.0.5"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "rimraf ./build && react-scripts --max_old_space_size=4096 build && rimraf ./build/**/*.map && postbuild.sh",
+		"postbuild": "rimraf build/**/*.map",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
 }
