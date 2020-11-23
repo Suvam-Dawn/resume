@@ -34,7 +34,7 @@ export default class App extends Component {
 	render() {
 		return (
 			<div style={rootStyle} className={'rootDiv'}>
-				<HashRouter basename={'/'}>
+				<HashRouter>
 					<Switch>
 						<Route exact path="/" render={() => <Redirect to="/about" />} />
 						<Route
