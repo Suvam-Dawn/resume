@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import General from './components/General';
-import { HashRouter, Switch, Route, Redirect, BrowserRouter } from 'react-router-dom';
+import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
 import LocalStorage from './config/LocalStorage';
 export default class App extends Component {
 	constructor(props) {
@@ -34,7 +34,7 @@ export default class App extends Component {
 	render() {
 		return (
 			<div style={rootStyle} className={'rootDiv'}>
-				<BrowserRouter>
+				<HashRouter basename={'/'}>
 					<Switch>
 						<Route exact path="/" render={() => <Redirect to="/about" />} />
 						<Route
@@ -43,7 +43,7 @@ export default class App extends Component {
 							component={General}
 						/>
 					</Switch>
-				</BrowserRouter>
+				</HashRouter>
 			</div>
 		);
 	}

@@ -1,6 +1,6 @@
 {
 	"homepage": "https://suvam-dawn.github.io/resume/",
-	"name": "my-resume",
+	"name": "resume",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
