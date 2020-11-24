@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "static/css/main.68193007.chunk.css",
-    "main.js": "static/js/main.e97f0d8e.chunk.js",
-    "main.js.map": "static/js/main.e97f0d8e.chunk.js.map",
+    "main.css": "static/css/main.bc83292b.chunk.css",
+    "main.js": "static/js/main.9df7a8dd.chunk.js",
+    "main.js.map": "static/js/main.9df7a8dd.chunk.js.map",
     "runtime-main.js": "static/js/runtime-main.6943ad41.js",
     "runtime-main.js.map": "static/js/runtime-main.6943ad41.js.map",
-    "static/css/2.c18a4e52.chunk.css": "static/css/2.c18a4e52.chunk.css",
-    "static/js/2.6f20648b.chunk.js": "static/js/2.6f20648b.chunk.js",
-    "static/js/2.6f20648b.chunk.js.map": "static/js/2.6f20648b.chunk.js.map",
+    "static/css/2.d3e41e9b.chunk.css": "static/css/2.d3e41e9b.chunk.css",
+    "static/js/2.0d8a8298.chunk.js": "static/js/2.0d8a8298.chunk.js",
+    "static/js/2.0d8a8298.chunk.js.map": "static/js/2.0d8a8298.chunk.js.map",
     "index.html": "/resume/index.html",
-    "precache-manifest.14ea66b3214af7f7e2616fc10def7fcc.js": "/resume/precache-manifest.14ea66b3214af7f7e2616fc10def7fcc.js",
+    "precache-manifest.52d6ac2c795ad3ce7600eda7cac43fff.js": "/resume/precache-manifest.52d6ac2c795ad3ce7600eda7cac43fff.js",
     "service-worker.js": "/resume/service-worker.js",
-    "static/css/2.c18a4e52.chunk.css.map": "static/css/2.c18a4e52.chunk.css.map",
-    "static/css/main.68193007.chunk.css.map": "static/css/main.68193007.chunk.css.map",
-    "static/js/2.6f20648b.chunk.js.LICENSE.txt": "static/js/2.6f20648b.chunk.js.LICENSE.txt",
+    "static/css/2.d3e41e9b.chunk.css.map": "static/css/2.d3e41e9b.chunk.css.map",
+    "static/css/main.bc83292b.chunk.css.map": "static/css/main.bc83292b.chunk.css.map",
+    "static/js/2.0d8a8298.chunk.js.LICENSE.txt": "static/js/2.0d8a8298.chunk.js.LICENSE.txt",
     "static/media/Suvam_Dawn_Resume(7407620534_8436758250_suvamdawn94@gmail.com).pdf": "static/media/Suvam_Dawn_Resume(7407620534_8436758250_suvamdawn94@gmail.com).fb5368b5.pdf",
-    "static/media/UNMATCHED_DEDICATION_AWARD.png": "static/media/UNMATCHED_DEDICATION_AWARD.24c6d537.png"
+    "static/media/UNMATCHED_DEDICATION_AWARD.png": "static/media/UNMATCHED_DEDICATION_AWARD.24c6d537.png",
+    "static/media/close.svg": "static/media/close.123b7d37.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.6943ad41.js",
-    "static/css/2.c18a4e52.chunk.css",
-    "static/js/2.6f20648b.chunk.js",
-    "static/css/main.68193007.chunk.css",
-    "static/js/main.e97f0d8e.chunk.js"
+    "static/css/2.d3e41e9b.chunk.css",
+    "static/js/2.0d8a8298.chunk.js",
+    "static/css/main.bc83292b.chunk.css",
+    "static/js/main.9df7a8dd.chunk.js"
   ]
 }
