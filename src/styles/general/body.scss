@@ -24,6 +24,13 @@ code {
 }
 
 @media screen and (max-width: 991px) {
+	.react-fancybox span .box img {
+		width: 100%;
+	}
+	.react-fancybox span .box .close-btn {
+		width: 25px;
+		right: 0px;
+	}
 	.left-menu {
 		margin-top: 0px !important;
 		margin-bottom: 0px !important;
@@ -418,4 +425,18 @@ li {
 }
 .active {
 	color: var(--menuButton) !important;
+}
+
+.react-fancybox .thumbnail img {
+	width: 96%;
+	max-width: 96%;
+	margin: 5px;
+	// max-height: '400px';
+	cursor: pointer;
+}
+.react-fancybox {
+	width: 97%;
+	max-width: 97%;
+	margin: 5px;
+	// max-height: '400px';
 }
