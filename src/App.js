@@ -39,7 +39,16 @@ export default class App extends Component {
 						<Route exact path="/" render={() => <Redirect to="/about" />} />
 						<Route
 							exact
-							path={['/about', '/experience', '/skills', '/education', '/contact', '/download', '/award']}
+							path={[
+								'/about',
+								'/experience',
+								'education',
+								'/skills',
+								'/education',
+								'/contact',
+								'/download',
+								'/award',
+							]}
 							component={General}
 						/>
 					</Switch>
