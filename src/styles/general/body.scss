@@ -102,6 +102,10 @@ code {
 		text-align: center;
 		margin-bottom: 20px;
 	}
+	.gitRepo_title {
+		color: var(--textColor);
+		text-align: center;
+	}
 	.about_description {
 		color: var(--customeLightGray);
 		text-align: justify;
@@ -116,6 +120,9 @@ code {
 	}
 	.contact_area a:hover {
 		text-decoration: unset;
+	}
+	.gitRepo_area {
+		margin-right: 20px;
 	}
 }
 .download {
@@ -183,6 +190,7 @@ code {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+	cursor: pointer;
 }
 
 .menuList {
@@ -290,6 +298,9 @@ code {
 		color: var(--textColor);
 		margin-bottom: 20px;
 	}
+	.gitRepo_title {
+		color: var(--textColor);
+	}
 	.about_description {
 		color: var(--customeLightGray);
 		text-align: justify;
@@ -322,6 +333,12 @@ code {
 		max-height: 430px;
 		overflow: hidden;
 		overflow-y: auto;
+	}
+	.gitRepo_area {
+		max-height: 430px;
+		overflow: hidden;
+		overflow-y: auto;
+		margin-right: 20px;
 	}
 	.contact_area a {
 		color: var(--customeGray);
@@ -358,6 +375,15 @@ code {
 .skills_name {
 	color: var(--customeGray);
 }
+.gitRepoDetails {
+	cursor: pointer;
+}
+.gitRepo_description {
+	color: var(--customeGray);
+}
+.gitRepo_name {
+	color: var(--menuButton);
+}
 .skills_percentage {
 	text-align: end;
 	margin-right: 25px;
@@ -366,6 +392,7 @@ code {
 @media (hover: hover) {
 	.content::-webkit-scrollbar-track,
 	.skills_area::-webkit-scrollbar-track,
+	.gitRepo_area::-webkit-scrollbar-track,
 	.education_area::-webkit-scrollbar-track,
 	.contact_area::-webkit-scrollbar-track,
 	.experience_area::-webkit-scrollbar-track {
@@ -377,6 +404,7 @@ code {
 
 	.content::-webkit-scrollbar,
 	.skills_area::-webkit-scrollbar,
+	.gitRepo_area::-webkit-scrollbar,
 	.education_area::-webkit-scrollbar,
 	.contact_area::-webkit-scrollbar,
 	.experience_area::-webkit-scrollbar {
@@ -387,6 +415,7 @@ code {
 	.content::-webkit-scrollbar-thumb,
 	.experience_area::-webkit-scrollbar-thumb,
 	.education_area::-webkit-scrollbar-thumb,
+	.gitRepo_area::-webkit-scrollbar-thumb,
 	.contact_area::-webkit-scrollbar-thumb,
 	.skills_area::-webkit-scrollbar-thumb {
 		border-radius: 100px;
@@ -439,4 +468,14 @@ li {
 	max-width: 97%;
 	margin: 5px;
 	// max-height: '400px';
+}
+.MuiDrawer-paperAnchorLeft {
+	width: 250px;
+	background: var(--secoundryBackground) !important;
+}
+.MuiDrawer-paper .MuiListItemIcon-root {
+	color: var(--menuButton);
+}
+.MuiDrawer-paper .MuiTypography-root {
+	color: var(--customeGray);
 }

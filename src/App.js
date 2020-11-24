@@ -48,6 +48,7 @@ export default class App extends Component {
 								'/contact',
 								'/download',
 								'/award',
+								'/githubrepo',
 							]}
 							component={General}
 						/>

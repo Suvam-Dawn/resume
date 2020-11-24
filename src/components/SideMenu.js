@@ -10,7 +10,7 @@ export default class SideMenu extends Component {
 		let location = window.location.hash;
 		return (
 			<div className="left-menu">
-				<div className={'menuBtn'}>
+				<div className={'menuBtn'} onClick={() => this.props.drawerStatusUpdate()}>
 					<FiMenu size={25} />
 				</div>
 				<div className={'menuList'}>
