@@ -7,6 +7,7 @@ import Experience from './info/Experience';
 import Skills from './info/Skills';
 import Award from './info/Award';
 import Education from './info/Education';
+import Contact from './info/Contact';
 export default class Content extends Component {
 	render() {
 		return (
@@ -18,6 +19,7 @@ export default class Content extends Component {
 				<Route exact path={['/skills']} component={Skills} />
 				<Route exact path={['/award']} component={Award} />
 				<Route exact path={['/education']} component={Education} />
+				<Route exact path={['/contact']} component={Contact} />
 				<Route render={() => <h3 style={{ color: '#fff' }}>Coming soon.</h3>} />
 			</Switch>
 		);

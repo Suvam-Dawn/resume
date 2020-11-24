@@ -67,12 +67,25 @@ code {
 		color: var(--textColor);
 		text-align: center;
 	}
+	.about_path {
+		color: var(--menuButton);
+		line-height: 25px;
+		text-align: center;
+	}
+	.about_path span {
+		color: var(--customeGray) !important;
+	}
 	.experience_title {
 		color: var(--textColor);
 		text-align: center;
 		margin-bottom: 20px;
 	}
 	.education_title {
+		color: var(--textColor);
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.contact_title {
 		color: var(--textColor);
 		text-align: center;
 		margin-bottom: 20px;
@@ -90,6 +103,12 @@ code {
 	}
 	.content_div__head {
 		min-height: 100vh;
+	}
+	.contact_area a {
+		color: var(--customeGray);
+	}
+	.contact_area a:hover {
+		text-decoration: unset;
 	}
 }
 .download {
@@ -241,11 +260,22 @@ code {
 	.about_title {
 		color: var(--textColor);
 	}
+	.about_path {
+		color: var(--menuButton);
+		line-height: 25px;
+	}
+	.about_path span {
+		color: var(--customeGray) !important;
+	}
 	.experience_title {
 		color: var(--textColor);
 		margin-bottom: 20px;
 	}
 	.education_title {
+		color: var(--textColor);
+		margin-bottom: 20px;
+	}
+	.contact_title {
 		color: var(--textColor);
 		margin-bottom: 20px;
 	}
@@ -275,10 +305,22 @@ code {
 		overflow-y: auto;
 		padding-right: 5px;
 	}
+	.contact_area {
+		max-height: 430px;
+		overflow: hidden;
+		overflow-y: auto;
+		padding-right: 5px;
+	}
 	.skills_area {
 		max-height: 430px;
 		overflow: hidden;
 		overflow-y: auto;
+	}
+	.contact_area a {
+		color: var(--customeGray);
+	}
+	.contact_area a:hover {
+		text-decoration: unset;
 	}
 }
 
@@ -318,6 +360,7 @@ code {
 	.content::-webkit-scrollbar-track,
 	.skills_area::-webkit-scrollbar-track,
 	.education_area::-webkit-scrollbar-track,
+	.contact_area::-webkit-scrollbar-track,
 	.experience_area::-webkit-scrollbar-track {
 		box-shadow: inset 0 0 6px transparent;
 		-webkit-box-shadow: inset 0 0 6px transparent;
@@ -328,6 +371,7 @@ code {
 	.content::-webkit-scrollbar,
 	.skills_area::-webkit-scrollbar,
 	.education_area::-webkit-scrollbar,
+	.contact_area::-webkit-scrollbar,
 	.experience_area::-webkit-scrollbar {
 		width: 5px;
 		background-color: transparent;
@@ -336,6 +380,7 @@ code {
 	.content::-webkit-scrollbar-thumb,
 	.experience_area::-webkit-scrollbar-thumb,
 	.education_area::-webkit-scrollbar-thumb,
+	.contact_area::-webkit-scrollbar-thumb,
 	.skills_area::-webkit-scrollbar-thumb {
 		border-radius: 100px;
 		box-shadow: inset 0 0 1px var(--customeLightGray);

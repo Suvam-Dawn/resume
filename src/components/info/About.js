@@ -4,6 +4,11 @@ export default class About extends Component {
 		return (
 			<div className="content">
 				<h1 className={'about_title'}>About me</h1>
+				<h6 className={'about_path'}>
+					3 Years <span> / </span>
+					Full-Stack Developer <span> / </span>
+					GeekSynergy Technologies
+				</h6>
 				<div className={'about_description'}>
 					I have been working as a full-stack developer since 2018, the period during which I have worked in
 					the different domain as Mobile App Development, Database-Management, and Handling, Server-Side
