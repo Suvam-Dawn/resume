@@ -31,18 +31,15 @@ export default class Experience extends Component {
 			],
 		};
 	}
-	ExperienceResponsibilities = ({ responsibility }) => {
-		return <li>{responsibility}</li>;
-	};
 	ExperienceComponent = ({ experienceResult }) => {
 		return (
 			<div>
 				<h6 className={'experience_year'}>{experienceResult.year}</h6>
 				<h6 className={'experience_company'}>{experienceResult.company}</h6>
 				<h6 className={'experience_company_location'}>{experienceResult.companyLocation}</h6>
-				<ul className={''}>
+				<ul>
 					{experienceResult.responsibilities.map((responsibility, responsibilityIndex) => (
-						<this.ExperienceResponsibilities key={responsibilityIndex} responsibility={responsibility} />
+						<li key={responsibilityIndex}>{responsibility}</li>
 					))}
 				</ul>
 			</div>
