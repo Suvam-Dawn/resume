@@ -7,28 +7,29 @@ import { FaAward } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 export default class SideMenu extends Component {
 	render() {
+		let location = window.location.hash;
 		return (
 			<div className="left-menu">
 				<div className={'menuBtn'}>
 					<FiMenu size={25} />
 				</div>
 				<div className={'menuList'}>
-					<Link to="/about">
+					<Link to="/about" className={location.includes('/about') ? 'active' : ''}>
 						<FaUserAlt size={25} />
 					</Link>
-					<Link to="/experience">
+					<Link to="/experience" className={location.includes('/experience') ? 'active' : ''}>
 						<MdWork size={25} />
 					</Link>
-					<Link to="/skills">
+					<Link to="/skills" className={location.includes('/skills') ? 'active' : ''}>
 						<MdSettings size={25} />
 					</Link>
-					<Link to="/education">
+					<Link to="/education" className={location.includes('/education') ? 'active' : ''}>
 						<FaUserGraduate size={25} />
 					</Link>
-					<Link to="/award">
+					<Link to="/award" className={location.includes('/award') ? 'active' : ''}>
 						<FaAward size={25} />
 					</Link>
-					<Link to="/contact">
+					<Link to="/contact" className={location.includes('/contact') ? 'active' : ''}>
 						<MdContacts size={25} />
 					</Link>
 				</div>
