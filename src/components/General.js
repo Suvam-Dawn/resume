@@ -141,6 +141,10 @@ export default class General extends Component {
 									<div component="span" color="text.primary" ml={1} className={'userNameDrawer'}>
 										<Link href="#/about">Suvam Dawn</Link>
 									</div>
+									<h6 className={'about_path'}>
+										3 Years <span> / </span>
+										Full-Stack Developer
+									</h6>
 								</div>
 							</Box>
 						</div>
