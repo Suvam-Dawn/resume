@@ -10,6 +10,40 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import Typography from '@material-ui/core/Typography';
 import { FaGithub, FaCloudDownloadAlt, FaUserAlt, FaUserGraduate, FaAward } from 'react-icons/fa';
 import { MdWork, MdSettings, MdContacts } from 'react-icons/md';
+import Box from '@material-ui/core/Box';
+import Avatar from '@material-ui/core/Avatar';
+import { withStyles } from '@material-ui/core/styles';
+import Badge from '@material-ui/core/Badge';
+import { Link } from '@material-ui/core';
+const StyledBadge = withStyles((theme) => ({
+	badge: {
+		backgroundColor: '#44b700',
+		color: '#44b700',
+		boxShadow: `0 0 0 2px ${theme.palette.background.paper}`,
+		'&::after': {
+			position: 'absolute',
+			top: 0,
+			left: 0,
+			width: '100%',
+			height: '100%',
+			borderRadius: '50%',
+			animation: '$ripple 1.2s infinite ease-in-out',
+			border: '1px solid currentColor',
+			content: '""',
+		},
+	},
+	'@keyframes ripple': {
+		'0%': {
+			transform: 'scale(.8)',
+			opacity: 1,
+		},
+		'100%': {
+			transform: 'scale(2.4)',
+			opacity: 0,
+		},
+	},
+}))(Badge);
+
 export default class General extends Component {
 	constructor(props) {
 		super(props);
@@ -87,6 +121,30 @@ export default class General extends Component {
 						</Col>
 					</Row>
 					<Drawer anchor={'left'} open={this.state.drawerStatus} onClose={() => this.drawerStatusUpdate()}>
+						<div className={'drawerUserInfo'}>
+							<Box bgcolor="background.paper" p={1} className={'userInfoBoxDrawer'}>
+								<StyledBadge
+									overlap="circle"
+									anchorOrigin={{
+										vertical: 'bottom',
+										horizontal: 'right',
+									}}
+									variant="dot"
+								>
+									<Avatar
+										className={'userImageDrawer'}
+										alt="User Logo"
+										src={require('../assets/suvam_dawn.webp')}
+									/>
+								</StyledBadge>
+								<div bgcolor="background.paper" p={1} className={'userInfoBoxDrawer'}>
+									<div component="span" color="text.primary" ml={1} className={'userNameDrawer'}>
+										<Link href="#/about">Suvam Dawn</Link>
+									</div>
+								</div>
+							</Box>
+						</div>
+
 						<MenuItem
 							onClick={() => {
 								this.drawerStatusUpdate();
